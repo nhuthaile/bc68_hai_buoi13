@@ -1,0 +1,68 @@
+1. Tính tiền lương nhân viên:
+- Input: 
++ số ngày làm là số nguyên dương
++ lương theo ngày cố định 100,000 vnđ
+
+- Xử lý:
++ Gọi biến số tiền lương theo ngày
++ Biến số ngày: Dom tới thẻ input nhận giá trị value số ngày.
+
+-Output: 
++ Số tiền lương = số ngày * 100,000 vnđ
+
+2. Nhập vào 5 số thực và tính ra số trung bình
++ Input: 
+- Nhận vào 5 số thực
+- Giả định người dùng nhập đúng 5 số, ko nhập sai nên ko cần kiểm tra
+
++ Xử lý
+- Gọi biến đến giá trị các thẻ input
+- Đảm bảo giá trị là số 
+- Tính giá trị trung bình bằng tổng chia cho 5
+
++ Output:
+- Tính ra sô trung bình 
+
+
+3. Quy Đổi Tiền
+- Input:
++ Tỷ giá cố định 1 USD = 23.500 VND
++ Nhân vào số tiền USD là giá trị là số thực 
+
+- Xử lý:
++ Đặt biến Dom đến giá trị input số tiền USD
++ Tính số tiền VND bằng số tiên USD * 23.500
+
+
+- Output:
++ Dom hiển thị số tiền VND sau khi quy đổi
+
+
+4. Tính diện tích và chu vi hình chữ nhật
+- Input:
++ Nhận vào số đo diện tích là số thực lớn hơn 0
+
+-Xử Lý:
++ Dom đến input lấy giá trị chiều dài và chiều rộng
++ Tính chu vi bằng dài + rộng * 2 
++ Tính diện tích bằng dài * rộng
+
+
+- Output:
++ Dom đến thẻ hiện kết quả chu vi
++ Dom đến thẻ hiện kết quả diện tích
+
+5. Tính Tổng 2 Ký Số
+
+- Input:
++ Nhận vào số nguyên có 2 chữ số 
+
+- Xử Lý:
++ Dom đến input nhận về giá trị 2 chữ số
++ Dùng math.floor cho So/10 để lấy ký số thứ nhất
++ Ký số thứ 2 = số 2 chữ số - 10 * ký số thứ nhất
++ Tính tổng 2 ký số
+
+
+- Output:
++ Dom thẻ hiển thị kết quả tổng

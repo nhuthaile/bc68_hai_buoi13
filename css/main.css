@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-item .nav-link {
+  background-color: rgb(144, 144, 255);
+  color: white;
+  margin: 2px;
+}
+
+.nav-item .nav-link.active {
+  background-color: blue;
+  color: white;
+  margin: 2px;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  width: 25vw;
+  height: 40px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  /* border-radius: 20px; */
+  border: none;
+}
+
+p {
+  display: inline-block;
+  width: 50vw;
+  height: 50px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 10px 5px;
+}

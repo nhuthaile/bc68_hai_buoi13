@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CSS MAIN -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="container mt-3">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane"
+            type="button"
+            role="tab"
+          >
+            Tiền Lương
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#profile-tab-pane"
+            type="button"
+            role="tab"
+          >
+            Giá Trị Trung Bình
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#contact-tab-pane"
+            type="button"
+            role="tab"
+          >
+            Quy Đổi Tiền
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="disabled-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#disabled-tab-pane"
+            type="button"
+            role="tab"
+          >
+            Hình Chữ Nhật
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="kySo-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#kySo-tab-pane"
+            type="button"
+            role="tab"
+          >
+            Tổng Hai Ký Số
+          </button>
+        </li>
+      </ul>
+      <!--  -->
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <div class="tinhTienLuong">
+            <h2>Tính Tiền Lương Nhân Viên</h2>
+            <label for="ngayCong">Nhập Số Ngày Công</label>
+            <input type="number" id="ngayCong" />
+            <button id="btn_tinhTienLuong">Tính Tiền Lương</button>
+            <div class="">
+              <label for="ketQuaTienLuong" class="d-block">Kết Quả</label>
+              <p id="ketQuaTienLuong" class=""></p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          <div class="giaTriTrungBinh">
+            <h2>Tính Giá Trị Trung Bình 5 Số</h2>
+            <!-- <label for="soThu1"></label> -->
+            <input type="number" id="soThu1" placeholder="số thứ 1" />
+            <input type="number" id="soThu2" placeholder="số thứ 2" />
+            <input type="number" id="soThu3" placeholder="số thứ 3" />
+            <input type="number" id="soThu4" placeholder="số thứ 4" />
+            <input type="number" id="soThu5" placeholder="số thứ 5" />
+            <button id="btn_giaTrungBinh">Tính Giá Trung Bình</button>
+            <label for="ketQuaTB" class="d-block">Kết Quả Trung Bình</label>
+            <p id="ketQuaTB"></p>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          <div class="quyDoiTien">
+            <h2>Quy Đổi Tiền</h2>
+            <label for="soUsd">Nhập tiền USD</label>
+            <input type="number" id="soUsd" />
+            <button id="btn_ketQuaVnd">Quy Đổi VND</button>
+            <label for="ketQuaVnd" class="d-block">Số Tiền VND</label>
+            <p id="ketQuaVnd"></p>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="tab-pane fade"
+          id="disabled-tab-pane"
+          role="tabpanel"
+          aria-labelledby="disabled-tab"
+          tabindex="0"
+        >
+          <div class="hinhChuNhat">
+            <h2>Tính Diện Tích Và Chu Vi Hình Chữ Nhật</h2>
+            <label for="chieuDai">Nhập Chiều Dài</label>
+            <input type="number" id="chieuDai" />
+            <label for="chieuRong">Nhập Chiều Rộng</label>
+            <input type="number" id="chieuRong" />
+            <button id="btn_hinhChuNhat">Tính Kết Quả</button>
+            <label for="" class="d-block">Chu Vi Và Diện Tích</label>
+            <p id="ketQuaChuVi"></p>
+            <p id="ketQuaDienTich"></p>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="tab-pane fade"
+          id="kySo-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          <div class="tongKySo">
+            <h2>Tính Tổng 2 Ký Số</h2>
+            <label for="soHaiChuSo">Nhập Số 2 Chữ Số</label>
+            <input type="number" id="soHaiChuSo" />
+            <button id="btn_tongKySo">Tổng 2 Ký Số</button>
+            <label for="ketQuaKySo">Kết Quả Tổng 2 Ký Số</label>
+            <p id="ketQuaKySo"></p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!--  -->
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
