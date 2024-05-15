@@ -49,7 +49,7 @@ document.getElementById("btn_hinhChuNhat").onclick = function () {
 
   document.getElementById(
     "ketQuaDienTich"
-  ).innerHTML = `Diện tích là:${dienTich} m2`;
+  ).innerHTML = `Diện tích là: ${dienTich} m2`;
 };
 
 // Tính Tổng 2 Ký Số
